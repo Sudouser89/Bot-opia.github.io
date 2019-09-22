@@ -224,37 +224,6 @@
 
 t.button.fadeOut("medium",function(){t.widget.stop().show().animate({bottom:"30px",opacity:1},2*t.delay),t.overlay.fadeIn(t.delay)})})});</script>
 
-<!--random-->
-<script type="text/javascript">
-
-    function xmpl(delimeter) {
-      var xmpls = {
-        commas:   'north, south, east, west',
-        newlines: 'north\nsouth\neast\nwest',
-        pipes:    'north|south|east|west'
-      }
-      document.getElementById('things').value = xmpls[delimeter]
-    }
-
-    var rnd = function () {
-      var loader, things;
-      loader = document.getElementById('ajax-loader');
-      loader.style.display = 'inline';
-      things = document.getElementById('things').value;
-      things = things.replace(/\|/g, ',');
-      things = things.replace(/\n/g, ',');
-      things = things.replace(', ', ',');
-      things = things.split(',');
-      setTimeout(function () {
-        var thing;
-        loader.style.display = 'none';
-        thing = Math.floor(Math.random() * things.length);
-        document.getElementById('result').innerHTML = things[thing];
-      }, 500);
-    };
-    
-    </script>
-
 <!--fb sdk-->
       <script>
   window.fbAsyncInit = function() {
@@ -283,18 +252,21 @@ t.button.fadeOut("medium",function(){t.widget.stop().show().animate({bottom:"30p
 /**
 *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
 *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+/*
 var disqus_config = function () {
-this.page.url = https:/sudouser89.github.io/bot_opia/;  // Replace PAGE_URL with your page's canonical URL variable
-this.page.identifier =com; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+this.page.url = https://sudouser89.github.io/bot_opia/#com;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = #com; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
 };
+*/
 (function() { // DON'T EDIT BELOW THIS LINE
 var d = document, s = d.createElement('script');
-s.src = 'https://bot-opia.disqus.com/embed.js';
+s.src = 'https://bot-opia2.disqus.com/embed.js';
 s.setAttribute('data-timestamp', +new Date());
 (d.head || d.body).appendChild(s);
 })();
 </script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                            
                             
       </div>
   </div>
